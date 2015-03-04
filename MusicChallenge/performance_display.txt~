@@ -1,0 +1,35 @@
+Performance Display
+
+This display shows in real time whatever is being played.
+This display allows the user to compare his/her performance with the base one.
+
+This display has a fixed width and can update its height
+The width represents a certain time (fixed)
+When the width (time) is overpased:
+ * a width overflow event is launched
+ * the height of the display is updated
+ * a new row is created in the 
+ * if the height of the display overflows the available space, it scrolls down in the scrollable area
+
+This display uses a music sheet style for the background (5 lines, G clef, etc)
+This display shows:
+ * The history  of what has been played
+ * The  current note being played
+
+Each showed note is annotated in the corresponding synesthesic colour
+Each note will be annotated with a rectangle with:
+ * y position: corresponds to the note, MUST be placed over the music sheet on the corresponding place
+ * x position: corresponds to the time it has been started 
+ * height: the height of the note (distance between two black lines) as max
+ * width: corresponds to the duration of the played note. MUST be updated when a note is being played
+ 
+The display MUST be able to show at least 2 voices.
+Each voice is independent
+
+A function allows to set the voice number
+Functions:
+currentVoiceNumber
+setVoiceNumber
+nextVoice (is like setVoiceNumber(currentVoiceNumber++)
+reset ->resets everything and set all voices to null
+

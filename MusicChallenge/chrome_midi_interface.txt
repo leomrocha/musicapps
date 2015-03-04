@@ -1,0 +1,25 @@
+Crome MIDI interface
+
+This interface MUST comply with only the reading of any MIDI device connected to the pubSub MIDI router.
+
+This interface is exclusive for latests chrome and chromium browsers
+The base for style is bootstrap from twitter
+
+There are for the moment only TWO elements to take in account:
+
+note ON #, data
+note OFF #, data
+
+for every incomming event it MUST resend the event to the pubSub MIDI router
+
+This must be an angularJS service, connect to the pubSub midi service
+
+It SHOULD give also a:
+AngularJS controller, to keep the state and the input source
+AngularJS directive: to allow selecting the input source
+There SHOULD be html templates and css for all the things
+
+Ther MUST be a small template that allows the user to click and go directly to the chrome options to enable de experimental MIDI support
+
+
+There is no output from the interface to external interfaces.

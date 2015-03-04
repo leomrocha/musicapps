@@ -1,0 +1,5 @@
+/home/leo/projects/music/MusicChallenge/candidate_libs/keyboards/vmpk-0.5.1/CMakeFiles/distclean.dir
+/home/leo/projects/music/MusicChallenge/candidate_libs/keyboards/vmpk-0.5.1/CMakeFiles/tarball.dir
+/home/leo/projects/music/MusicChallenge/candidate_libs/keyboards/vmpk-0.5.1/translations/CMakeFiles/translations.dir
+/home/leo/projects/music/MusicChallenge/candidate_libs/keyboards/vmpk-0.5.1/CMakeFiles/uninstall.dir
+/home/leo/projects/music/MusicChallenge/candidate_libs/keyboards/vmpk-0.5.1/src/CMakeFiles/vmpk.dir

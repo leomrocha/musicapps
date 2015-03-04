@@ -1,0 +1,76 @@
+Fretboard:
+
+
+This document describes the neds for the fretboard component.
+
+The fretboard is the element of a musical instrument composed of a surface where the fingers will press the cords and is is separated with frets
+A fret, when a cord is pressed against, will make the vibrating part of the cord smaller, thus changing the fundamental frequency at which it resonates.
+
+All te development will be done using the AngularJS framework
+
+A fretboard can belong to any cord based instrument (guitar, bass, ukulele), thus it is a need that the number of cords as well as the tuning to be defined as parameters.
+
+Initialization parameters:
+* instrument name 
+* number of cords
+* tuning -> in a list either: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'] or MIDI number [ , , , , , , ], both formats should be supported (for translation between formats use an available library or make one that can be reused elsewhere)
+* max width
+* max lenght
+* synesthesics -> (optional, activated by default) this maps a colour to each note
+
+The default values
+For guitar the default is 6 cords and the tuning EADGBE
+For bass is 4 cords and XXXX
+For ukulele is 4 cords and XXXX
+
+If the instrument name is in the list of supported instruments, then the default values can be taken in account if not given
+If the instrument name is NOT on the supported instruments list, then the number of cords and tuning must be given in the call
+
+
+Initialization process:
+
+The fretboard draws itself in the screen
+The fretboard activates all components
+The fretboard component MUST register to the pubSub service providing a method callback for noteON and noteOff
+
+Look & Feel:
+
+Sober (zen), black text and lines over white background
+With and length given are max parameters, it is important to keep a nice ratio between them so it is nice and to look at
+As used in many guitars, there will be a circle (grey, just to mark the points) in the longitudinal axe, centered between the freets: 
+    * 2 and 3
+    * 4 and 5
+    * 6 and 7
+    * 14 and 15
+And two equidistant circles along the vertical axe between the frets 11 and 12
+
+At the left of each fret (the vertical marks) there will be a thin rectangle (that takes the whole height of the space related to the cord) that is colored in the note's corresponding synesthesical colour. All the remainig space will be white 
+
+When a note is active it must be displayed in its corresponding synestesical colour.
+It is a plus that when a note is active all the cord from that fret to the end of the string (the part that should vibrate) is painted in the corresponding synesthesical colour
+
+Synesthesics will be as defined in the MIDI.js synesthesics module
+
+
+Functionality:
+
+A note can be activated by the following events:
+
+A user mouse press (or taps and not release) a place at the screen
+A user presses a key in the keyboard corresponding to the key
+
+A note ON event arrives (  noteON(midi_id) ). This is through the pubSub service.
+
+
+A note is deactivated when:
+A user releases the mouse (or screen) button
+A user releases a key in the keyboard
+
+A note OFF event arrives ( noteOFF(midi_id) )
+
+
+When a note is activated by mouse or keyboard a noteON(midi_id) event must be sent to the pubSub service
+When a note is deactivated by mouse or keyboard a noteOFF(midi_id) event must be sent to the pubSub service
+
+
+

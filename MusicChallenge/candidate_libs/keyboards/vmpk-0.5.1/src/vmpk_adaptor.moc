@@ -1,0 +1,347 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'vmpk_adaptor.h'
+**
+** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.6)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "vmpk_adaptor.h"
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'vmpk_adaptor.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.6. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+static const uint qt_meta_data_VmpkAdaptor[] = {
+
+ // content:
+       6,       // revision
+       0,       // classname
+       2,   14, // classinfo
+      46,   18, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       7,       // signalCount
+
+ // classinfo: key, value
+      33,   12,
+    5406,   49,
+
+ // signals: signature, parameters, type, tag, flags
+    5433, 5427, 5426, 5426, 0x05,
+    5471, 5457, 5426, 5426, 0x05,
+    5505, 5500, 5426, 5426, 0x05,
+    5524, 5500, 5426, 5426, 0x05,
+    5542, 5427, 5426, 5426, 0x05,
+    5575, 5564, 5426, 5426, 0x05,
+    5603, 5427, 5426, 5426, 0x05,
+
+ // slots: signature, parameters, type, tag, flags
+    5638, 5427, 5426, 5628, 0x0a,
+    5656, 5427, 5426, 5628, 0x0a,
+    5669, 5426, 5426, 5628, 0x0a,
+    5677, 5427, 5426, 5628, 0x0a,
+    5697, 5427, 5426, 5628, 0x0a,
+    5718, 5427, 5426, 5628, 0x0a,
+    5737, 5457, 5426, 5628, 0x0a,
+    5760, 5426, 5426, 5426, 0x0a,
+    5767, 5426, 5426, 5426, 0x0a,
+    5779, 5775, 5426, 5426, 0x0a,
+    5793, 5500, 5426, 5628, 0x0a,
+    5806, 5500, 5426, 5628, 0x0a,
+    5818, 5427, 5426, 5628, 0x0a,
+    5830, 5426, 5426, 5628, 0x0a,
+    5838, 5427, 5426, 5628, 0x0a,
+    5854, 5564, 5426, 5628, 0x0a,
+    5876, 5427, 5426, 5628, 0x0a,
+    5895, 5427, 5426, 5628, 0x0a,
+    5922, 5426, 5426, 5628, 0x0a,
+    5929, 5426, 5426, 5426, 0x0a,
+    5937, 5426, 5426, 5426, 0x0a,
+    5947, 5426, 5426, 5628, 0x0a,
+    5980, 5967, 5426, 5426, 0x0a,
+    6004, 5996, 5426, 5426, 0x0a,
+    6029, 6022, 5426, 5426, 0x0a,
+    6046, 5426, 5426, 5426, 0x0a,
+    6064, 6057, 5426, 5426, 0x0a,
+    6091, 6080, 5426, 5426, 0x0a,
+    6122, 6114, 5426, 5426, 0x0a,
+    6148, 6139, 5426, 5426, 0x0a,
+    6178, 6172, 5426, 5426, 0x0a,
+    6202, 5426, 5426, 5426, 0x0a,
+    6209, 5426, 5426, 5426, 0x0a,
+    6226, 5426, 5426, 5426, 0x0a,
+    6242, 5426, 5426, 5426, 0x0a,
+    6258, 5426, 5426, 5426, 0x0a,
+    6271, 5427, 5426, 5628, 0x0a,
+    6286, 5426, 5426, 5426, 0x0a,
+    6295, 5427, 5426, 5628, 0x0a,
+
+       0        // eod
+};
+
+static const char qt_meta_stringdata_VmpkAdaptor[] = {
+    "VmpkAdaptor\0net.sourceforge.vmpk\0"
+    "D-Bus Interface\0"
+    "  <interface name=\"net.sourceforge.vmpk\">\n    <!-- window/widget in"
+    "terface controls -->\n    <method name=\"close\">\n      <annotation v"
+    "alue=\"true\" name=\"org.freedesktop.DBus.Method.NoReply\"/>\n    </me"
+    "thod>\n    <method name=\"hide\"/>\n    <method name=\"lower\"/>\n    "
+    "<method name=\"raise\"/>\n    <method name=\"repaint\"/>\n    <method "
+    "name=\"setDisabled\">\n      <arg direction=\"in\" type=\"b\" name=\"d"
+    "isable\"/>\n    </method>\n    <method name=\"setEnabled\">\n      <ar"
+    "g direction=\"in\" type=\"b\" name=\"enable\"/>\n    </method>\n    <m"
+    "ethod name=\"setFocus\"/>\n    <method name=\"setHidden\">\n      <arg"
+    " direction=\"in\" type=\"b\" name=\"hidden\"/>\n    </method>\n    <me"
+    "thod name=\"setStyleSheet\">\n      <arg direction=\"in\" type=\"s\" n"
+    "ame=\"styleSheet\"/>\n    </method>\n    <method name=\"setVisible\">\n"
+    "      <arg direction=\"in\" type=\"b\" name=\"visible\"/>\n    </metho"
+    "d>\n    <method name=\"setWindowModified\">\n      <arg direction=\"in"
+    "\" type=\"b\" name=\"modified\"/>\n    </method>\n    <method name=\"s"
+    "etWindowTitle\">\n      <arg direction=\"in\" type=\"s\" name=\"title\""
+    "/>\n    </method>\n    <method name=\"show\"/>\n    <method name=\"sho"
+    "wFullScreen\"/>\n    <method name=\"showMaximized\"/>\n    <method nam"
+    "e=\"showMinimized\"/>\n    <method name=\"showNormal\"/>\n    <method "
+    "name=\"update\"/>\n    <method name=\"resize\">\n      <arg direction="
+    "\"in\" type=\"i\" name=\"width\"/>\n      <arg direction=\"in\" type=\""
+    "i\" name=\"height\"/>\n    </method>\n    <method name=\"move\">\n    "
+    "  <arg direction=\"in\" type=\"i\" name=\"x\"/>\n      <arg direction="
+    "\"in\" type=\"i\" name=\"y\"/>\n    </method>\n    <!-- basic program "
+    "interface controls -->\n    <method name=\"quit\">\n      <annotation "
+    "value=\"true\" name=\"org.freedesktop.DBus.Method.NoReply\"/>\n    </m"
+    "ethod>\n    <method name=\"panic\">\n      <annotation value=\"true\" "
+    "name=\"org.freedesktop.DBus.Method.NoReply\"/>\n    </method>\n    <me"
+    "thod name=\"reset_controllers\">\n      <annotation value=\"true\" nam"
+    "e=\"org.freedesktop.DBus.Method.NoReply\"/>\n    </method>\n    <metho"
+    "d name=\"channel\">\n      <annotation value=\"true\" name=\"org.freed"
+    "esktop.DBus.Method.NoReply\"/>\n      <arg direction=\"in\" type=\"i\""
+    " name=\"value\"/>\n    </method>\n    <method name=\"octave\">\n      "
+    "<annotation value=\"true\" name=\"org.freedesktop.DBus.Method.NoReply\""
+    "/>\n      <arg direction=\"in\" type=\"i\" name=\"value\"/>\n    </met"
+    "hod>\n    <method name=\"transpose\">\n      <annotation value=\"true\""
+    " name=\"org.freedesktop.DBus.Method.NoReply\"/>\n      <arg direction="
+    "\"in\" type=\"i\" name=\"value\"/>\n    </method>\n    <method name=\""
+    "velocity\">\n      <annotation value=\"true\" name=\"org.freedesktop.D"
+    "Bus.Method.NoReply\"/>\n      <arg direction=\"in\" type=\"i\" name=\""
+    "value\"/>\n    </method>\n    <method name=\"connect_in\">\n      <ann"
+    "otation value=\"true\" name=\"org.freedesktop.DBus.Method.NoReply\"/>\n"
+    "      <arg direction=\"in\" type=\"s\" name=\"value\"/>\n    </method>"
+    "\n    <method name=\"connect_out\">\n      <annotation value=\"true\" "
+    "name=\"org.freedesktop.DBus.Method.NoReply\"/>\n      <arg direction=\""
+    "in\" type=\"s\" name=\"value\"/>\n    </method>\n    <method name=\"co"
+    "nnect_thru\">\n      <annotation value=\"true\" name=\"org.freedesktop"
+    ".DBus.Method.NoReply\"/>\n      <arg direction=\"in\" type=\"b\" name="
+    "\"value\"/>\n    </method>\n    <!-- standard MIDI channel event gener"
+    "ators -->\n    <method name=\"noteoff\">\n      <annotation value=\"tr"
+    "ue\" name=\"org.freedesktop.DBus.Method.NoReply\"/>\n      <arg direct"
+    "ion=\"in\" type=\"i\" name=\"note\"/>\n    </method>\n    <method name"
+    "=\"noteon\">\n      <annotation value=\"true\" name=\"org.freedesktop."
+    "DBus.Method.NoReply\"/>\n      <arg direction=\"in\" type=\"i\" name=\""
+    "note\"/>\n    </method>\n    <method name=\"polykeypress\">\n      <an"
+    "notation value=\"true\" name=\"org.freedesktop.DBus.Method.NoReply\"/>"
+    "\n      <arg direction=\"in\" type=\"i\" name=\"note\"/>\n      <arg d"
+    "irection=\"in\" type=\"i\" name=\"value\"/>\n    </method>\n    <metho"
+    "d name=\"controlchange\">\n      <annotation value=\"true\" name=\"org"
+    ".freedesktop.DBus.Method.NoReply\"/>\n      <arg direction=\"in\" type"
+    "=\"i\" name=\"control\"/>\n      <arg direction=\"in\" type=\"i\" name"
+    "=\"value\"/>\n    </method>\n    <method name=\"programchange\">\n    "
+    "  <annotation value=\"true\" name=\"org.freedesktop.DBus.Method.NoRepl"
+    "y\"/>\n      <arg direction=\"in\" type=\"i\" name=\"value\"/>\n    </"
+    "method>\n    <method name=\"programnamechange\">\n      <annotation va"
+    "lue=\"true\" name=\"org.freedesktop.DBus.Method.NoReply\"/>\n      <ar"
+    "g direction=\"in\" type=\"s\" name=\"value\"/>\n    </method>\n    <me"
+    "thod name=\"chankeypress\">\n      <annotation value=\"true\" name=\"o"
+    "rg.freedesktop.DBus.Method.NoReply\"/>\n      <arg direction=\"in\" ty"
+    "pe=\"i\" name=\"value\"/>\n    </method>\n    <method name=\"pitchwhee"
+    "l\">\n      <annotation value=\"true\" name=\"org.freedesktop.DBus.Met"
+    "hod.NoReply\"/>\n      <arg direction=\"in\" type=\"i\" name=\"value\""
+    "/>\n    </method>\n    <!-- standard MIDI channel events -->\n    <sig"
+    "nal name=\"event_noteoff\">\n      <arg type=\"i\" name=\"note\"/>\n  "
+    "  </signal>\n    <signal name=\"event_noteon\">\n      <arg type=\"i\""
+    " name=\"note\"/>\n    </signal>\n    <signal name=\"event_polykeypress"
+    "\">\n      <arg type=\"i\" name=\"note\"/>\n      <arg type=\"i\" name"
+    "=\"value\"/>\n    </signal>\n    <signal name=\"event_controlchange\">"
+    "\n      <arg type=\"i\" name=\"control\"/>\n      <arg type=\"i\" name"
+    "=\"value\"/>\n    </signal>\n    <signal name=\"event_programchange\">"
+    "\n      <arg type=\"i\" name=\"value\"/>\n    </signal>\n    <signal n"
+    "ame=\"event_chankeypress\">\n      <arg type=\"i\" name=\"value\"/>\n "
+    "   </signal>\n    <signal name=\"event_pitchwheel\">\n      <arg type="
+    "\"i\" name=\"value\"/>\n    </signal>\n  </interface>\n\0"
+    "D-Bus Introspection\0\0value\0"
+    "event_chankeypress(int)\0control,value\0"
+    "event_controlchange(int,int)\0note\0"
+    "event_noteoff(int)\0event_noteon(int)\0"
+    "event_pitchwheel(int)\0note,value\0"
+    "event_polykeypress(int,int)\0"
+    "event_programchange(int)\0Q_NOREPLY\0"
+    "chankeypress(int)\0channel(int)\0close()\0"
+    "connect_in(QString)\0connect_out(QString)\0"
+    "connect_thru(bool)\0controlchange(int,int)\0"
+    "hide()\0lower()\0x,y\0move(int,int)\0"
+    "noteoff(int)\0noteon(int)\0octave(int)\0"
+    "panic()\0pitchwheel(int)\0polykeypress(int,int)\0"
+    "programchange(int)\0programnamechange(QString)\0"
+    "quit()\0raise()\0repaint()\0reset_controllers()\0"
+    "width,height\0resize(int,int)\0disable\0"
+    "setDisabled(bool)\0enable\0setEnabled(bool)\0"
+    "setFocus()\0hidden\0setHidden(bool)\0"
+    "styleSheet\0setStyleSheet(QString)\0"
+    "visible\0setVisible(bool)\0modified\0"
+    "setWindowModified(bool)\0title\0"
+    "setWindowTitle(QString)\0show()\0"
+    "showFullScreen()\0showMaximized()\0"
+    "showMinimized()\0showNormal()\0"
+    "transpose(int)\0update()\0velocity(int)\0"
+};
+
+void VmpkAdaptor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        VmpkAdaptor *_t = static_cast<VmpkAdaptor *>(_o);
+        switch (_id) {
+        case 0: _t->event_chankeypress((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->event_controlchange((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 2: _t->event_noteoff((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 3: _t->event_noteon((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 4: _t->event_pitchwheel((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 5: _t->event_polykeypress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 6: _t->event_programchange((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->chankeypress((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->channel((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 9: _t->close(); break;
+        case 10: _t->connect_in((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 11: _t->connect_out((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 12: _t->connect_thru((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 13: _t->controlchange((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 14: _t->hide(); break;
+        case 15: _t->lower(); break;
+        case 16: _t->move((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 17: _t->noteoff((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 18: _t->noteon((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 19: _t->octave((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 20: _t->panic(); break;
+        case 21: _t->pitchwheel((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 22: _t->polykeypress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 23: _t->programchange((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 24: _t->programnamechange((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 25: _t->quit(); break;
+        case 26: _t->raise(); break;
+        case 27: _t->repaint(); break;
+        case 28: _t->reset_controllers(); break;
+        case 29: _t->resize((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 30: _t->setDisabled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 31: _t->setEnabled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 32: _t->setFocus(); break;
+        case 33: _t->setHidden((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 34: _t->setStyleSheet((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 35: _t->setVisible((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 36: _t->setWindowModified((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 37: _t->setWindowTitle((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 38: _t->show(); break;
+        case 39: _t->showFullScreen(); break;
+        case 40: _t->showMaximized(); break;
+        case 41: _t->showMinimized(); break;
+        case 42: _t->showNormal(); break;
+        case 43: _t->transpose((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 44: _t->update(); break;
+        case 45: _t->velocity((*reinterpret_cast< int(*)>(_a[1]))); break;
+        default: ;
+        }
+    }
+}
+
+const QMetaObjectExtraData VmpkAdaptor::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
+};
+
+const QMetaObject VmpkAdaptor::staticMetaObject = {
+    { &QDBusAbstractAdaptor::staticMetaObject, qt_meta_stringdata_VmpkAdaptor,
+      qt_meta_data_VmpkAdaptor, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &VmpkAdaptor::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
+
+const QMetaObject *VmpkAdaptor::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+}
+
+void *VmpkAdaptor::qt_metacast(const char *_clname)
+{
+    if (!_clname) return 0;
+    if (!strcmp(_clname, qt_meta_stringdata_VmpkAdaptor))
+        return static_cast<void*>(const_cast< VmpkAdaptor*>(this));
+    return QDBusAbstractAdaptor::qt_metacast(_clname);
+}
+
+int VmpkAdaptor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDBusAbstractAdaptor::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 46)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 46;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void VmpkAdaptor::event_chankeypress(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void VmpkAdaptor::event_controlchange(int _t1, int _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void VmpkAdaptor::event_noteoff(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
+}
+
+// SIGNAL 3
+void VmpkAdaptor::event_noteon(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
+}
+
+// SIGNAL 4
+void VmpkAdaptor::event_pitchwheel(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 4, _a);
+}
+
+// SIGNAL 5
+void VmpkAdaptor::event_polykeypress(int _t1, int _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
+}
+
+// SIGNAL 6
+void VmpkAdaptor::event_programchange(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 6, _a);
+}
+QT_END_MOC_NAMESPACE
