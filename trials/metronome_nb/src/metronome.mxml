@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"
+			   creationComplete="init()"
+			   >
+	
+	<fx:Script>
+		<![CDATA[
+			import com.metronome.Metronome;
+			
+			import mx.core.UIComponent;
+			
+			import spark.events.TextOperationEvent;
+			
+			protected var startStopState:Number;// = Number(0); //0 stop, 1 start
+			private var container:UIComponent;
+			protected var metro:Metronome;
+			
+			
+			private function init():void
+			{
+				metro = new Metronome();
+				container = new UIComponent();
+				addElement(container);
+				container.addChild(metro);
+				//metroContainer.addChild(metro);
+			}
+			
+			protected function bpmSlider_changeHandler(event:Event):void
+			{
+				// TODO Auto-generated method stub
+				//update the bpm text input
+				BPM.text = String(bpmSlider.value);
+				//stateStop();
+				metro.bpm = bpmSlider.value;
+				
+			}
+			
+			protected function BPM_changeHandler(event:TextOperationEvent):void
+			{
+				var new_bpm:Number = Number(BPM.text);
+				if (new_bpm > 208)
+				{
+					BPM.text = String(208);
+				}
+				else
+				{
+					//update the slider value
+					bpmSlider.value = new_bpm;
+					//set the value in the metronome
+					//stateStop();
+					metro.bpm = bpmSlider.value;
+				}
+			}
+			protected function stateStop():void
+			{
+				if(startStopState <=0 ) return;
+				metro.stopTicking();
+				startStopState = 0;
+				startStopButton.label = "Start";
+			}
+			protected function stateStart():void
+			{
+				if(startStopState >0 ) return;
+				//start the metronome
+				metro.startTicking();
+				//change text to Stop
+				startStopState = 1;
+				startStopButton.label = "Stop";
+			}
+							
+			protected function startStopButton_clickHandler(event:MouseEvent):void
+			{
+				// TODO Auto-generated method stub
+				if ( startStopState >0 ) //started, then should stop
+					stateStop();
+				else //stopped, change to started
+					stateStart();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:VGroup x="156" y="93" width="208" height="228">
+		<s:HGroup width="200" height="28">
+			<s:HSlider id="bpmSlider" width="70%" change="bpmSlider_changeHandler(event)" maximum="208"
+					   minimum="40" stepSize="1" value="40"/>
+			<s:TextInput id="BPM" width="20%" change="BPM_changeHandler(event)" enabled="true"
+						 text="40"/>
+		</s:HGroup>
+		<s:BorderContainer id="metroContainer" width="200" height="121">
+		</s:BorderContainer>
+		<s:Button id="startStopButton" width="40%" label="Start"
+				  click="startStopButton_clickHandler(event)"/>
+	</s:VGroup>
+</s:Application>

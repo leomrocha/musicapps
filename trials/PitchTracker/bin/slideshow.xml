@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GALLERY>
+	
+	<image title="Image 1" src="images/large/1.jpg" href="http://leopanigo.net/img1" />
+	<image title="Image 2" src="images/large/2.jpg" href="http://leopanigo.net/img2"/>
+	<image title="Image 3" src="images/large/3.jpg" href="http://leopanigo.net/img3"/>
+	<image title="Image 4" src="images/large/4.jpg" href="http://leopanigo.net/img4" />
+	<image title="Image 5" src="images/large/5.jpg" href="http://leopanigo.net/img5"/>		
+	
+</GALLERY>

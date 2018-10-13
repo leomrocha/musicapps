@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+                       xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="900" minHeight="600"
+					   creationComplete="init()"
+					   >
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+			
+	<fx:Script>
+		<![CDATA[
+			
+			import mx.core.UIComponent;
+			
+			private var game:TFGameCanvas;
+			private var container:UIComponent;
+			
+			
+			private function init():void
+			{
+				game = new TFGameCanvas();
+				container = new UIComponent();
+				addElement(container);
+				container.addChild(game);
+			}
+			
+		]]>
+	</fx:Script>
+</s:WindowedApplication>
